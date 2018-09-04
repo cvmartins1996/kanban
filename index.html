@@ -15,8 +15,10 @@
         <div class="nav-wrapper">
             <a href="#!" class="brand-logo"><i class="material-icons">menu</i>Kanban</a>
             <ul class="right hide-on-med-and-down">
-            <li><a href="#"><i class="material-icons">search</i></a></li>
+            <li><a class="modal-trigger" href="#modal2"><i class="material-icons">search</i></a></li>
             <li><a href="#"><i class="material-icons">refresh</i></a></li>
+            <li><a href="#modal3" class="tooltipped modal-trigger" data-position="bottom" data-tooltip="Wapama"><i class="material-icons">linear_scale</i></a></li>
+            <li><a href="#modal4" class="tooltipped modal-trigger" data-position="bottom" data-tooltip="Relatórios"><i class="material-icons">assessment</i></a></li>
             </ul>
         </div>
     </nav>
@@ -184,6 +186,64 @@
         <div class="modal-footer">
             <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ok</a>
         </div>
+    </div>
+
+
+    <div id="modal2" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h4>Parametros de busca</h4>
+            
+            <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                        <div class="input-field col s6">
+                            <input placeholder="Numero do Processo" id="first_name" type="text" class="validate">
+                            <label for="first_name">Numero do Processo</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Assunto</label>
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="email" type="email" class="validate">
+                                <label for="email">Código Externo</label>
+                            </div>
+                        </div>
+                        
+                    </form>
+                </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Buscar</a>
+        </div>
+    </div>
+
+
+    <div id="modal3" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h4>Wapama do processo</h4>
+            
+            <div class="row">
+                <img src="http://blog.iprocess.com.br/wp-content/uploads/2012/11/blog_da_iprocess-exemplo_de_processo_em_bpmn.png" width="100%">
+            </div>
+        </div>
+        
+    </div>
+
+    <div id="modal4" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h4>Escolha o relatório</h4>
+            
+            <div class="row">
+                <ul>
+                    <li><a href="#">relatório de conteudo</a></li>
+                    <li><a href="#">relatório de tarefas</a></li>
+                </ul>
+            </div>
+        </div>
+        
     </div>
         
     <script type="text/javascript" src="js/materialize.min.js"></script>
